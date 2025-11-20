@@ -22,12 +22,10 @@ on:
       armbian_board:
         description: "Select device board."
         required: false
-        default: "all"
+        default: "s922x-oes-plus"
         type: choice
         options:
           - all
-          - a311d-oes_s922x-oes-plus_wxy-oect
-          - a311d
           - a311d-oes
           - s922x
           - s922x-ct2000
@@ -39,10 +37,9 @@ on:
           - s922x-ugoos-am6
           - wocyber-a3
           - wxy-oect
-          - wxy-oect-replaced
       armbian_kernel:
         description: "Select kernel version."
-        required: false
+        required: true
         default: "5.10.y"
         type: choice
         options:
