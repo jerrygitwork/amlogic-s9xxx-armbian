@@ -40,7 +40,7 @@ on:
       armbian_kernel:
         description: "Select kernel version."
         required: true
-        default: "5.10.y"
+        default: "5.15.196"
         type: choice
         options:
           - 5.10.y
@@ -211,7 +211,7 @@ jobs:
           build_target: armbian
           armbian_path: build/output/images/*.img.gz
           armbian_board: ${{ inputs.armbian_board }}
-          armbian_kernel: "5.10.246"
+          armbian_kernel: "5.15.196"
           auto_kernel:  false
           kernel_repo: ${{ inputs.kernel_repo }}
           kernel_usage: ${{ inputs.kernel_usage }}
